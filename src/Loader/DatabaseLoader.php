@@ -16,7 +16,7 @@ use Throwable;
 
 final class DatabaseLoader extends Loader
 {
-    private const string LOADER_TYPE = 'database';
+    private const LOADER_TYPE = 'database';
 
     private bool $isLoaded = false;
 
