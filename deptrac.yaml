@@ -1,0 +1,106 @@
+deptrac:
+    paths:
+        - ./src
+    layers:
+        - name: Contract
+          collectors:
+            - type: directory
+              value: src/Contract/.*
+        - name: Entity
+          collectors:
+            - type: directory
+              value: src/Entity/.*
+        - name: Repository
+          collectors:
+            - type: directory
+              value: src/Repository/.*
+        - name: Loader
+          collectors:
+            - type: directory
+              value: src/Loader/.*
+        - name: Factory
+          collectors:
+            - type: directory
+              value: src/Factory/.*
+        - name: Form
+          collectors:
+            - type: directory
+              value: src/Form/.*
+        - name: Validator
+          collectors:
+            - type: directory
+              value: src/Validator/.*
+        - name: Resource
+          collectors:
+            - type: directory
+              value: src/Resource/.*
+        - name: Sitemap
+          collectors:
+            - type: directory
+              value: src/Sitemap/.*
+        - name: Search
+          collectors:
+            - type: directory
+              value: src/Search/.*
+        - name: EventListener
+          collectors:
+            - type: directory
+              value: src/EventListener/.*
+        - name: Controller
+          collectors:
+            - type: directory
+              value: src/Controller/.*
+        - name: Bundle
+          collectors:
+            - type: classNameRegex
+              value: '/^Symkit\\\\RoutingBundle\\\\RoutingBundle$/'
+    ruleset:
+        Contract: []
+        Entity:
+            - Contract
+            - Repository
+            - Validator
+        Repository:
+            - Contract
+            - Entity
+        Loader:
+            - Contract
+            - Factory
+            - Repository
+            - Resource
+        Factory:
+            - Contract
+        Form:
+            - Contract
+            - Entity
+        Validator:
+            - Contract
+            - Entity
+            - Factory
+        Resource:
+            - Repository
+        Sitemap:
+            - Contract
+            - Repository
+        Search:
+            - Contract
+            - Repository
+        EventListener:
+            - Contract
+            - Entity
+        Controller:
+            - Contract
+            - Entity
+            - Form
+        Bundle:
+            - Contract
+            - Controller
+            - EventListener
+            - Factory
+            - Form
+            - Loader
+            - Repository
+            - Resource
+            - Search
+            - Sitemap
+            - Validator

@@ -1,0 +1,15 @@
+# Admin routes for database-driven routes (CRUD).
+# Import this file in your app with a prefix, e.g.:
+#   _symkit_routing_admin:
+#     resource: '@SymkitRoutingBundle/config/routes.yaml'
+#     prefix: /admin/routes
+
+admin_routes_list:
+    path: /
+    controller: Symkit\RoutingBundle\Controller\Admin\RouteController::list
+    methods: GET
+
+admin_routes_edit:
+    path: /{id}/edit
+    controller: Symkit\RoutingBundle\Controller\Admin\RouteController::edit
+    methods: [GET, POST]

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="SymkitRoutingBundle">
+        <body>
+            <trans-unit id="admin.page_title.list">
+                <source>admin.page_title.list</source>
+                <target>Routes</target>
+            </trans-unit>
+            <trans-unit id="admin.page_description.list">
+                <source>admin.page_description.list</source>
+                <target>Gérer les routes pilotées par la base de données.</target>
+            </trans-unit>
+            <trans-unit id="admin.page_title.edit">
+                <source>admin.page_title.edit</source>
+                <target>Modifier la route</target>
+            </trans-unit>
+            <trans-unit id="admin.page_title.edit_name">
+                <source>admin.page_title.edit_name</source>
+                <target>Modifier : %name%</target>
+            </trans-unit>
+            <trans-unit id="admin.page_description.edit">
+                <source>admin.page_description.edit</source>
+                <target>Mettre à jour les paramètres de la route.</target>
+            </trans-unit>
+            <trans-unit id="admin.field.name">
+                <source>admin.field.name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="admin.field.path">
+                <source>admin.field.path</source>
+                <target>Chemin</target>
+            </trans-unit>
+            <trans-unit id="admin.field.active">
+                <source>admin.field.active</source>
+                <target>Actif</target>
+            </trans-unit>
+            <trans-unit id="admin.field.updated">
+                <source>admin.field.updated</source>
+                <target>Modifié</target>
+            </trans-unit>
+            <trans-unit id="form.section.general">
+                <source>form.section.general</source>
+                <target>Général</target>
+            </trans-unit>
+            <trans-unit id="form.section.general_description">
+                <source>form.section.general_description</source>
+                <target>Gérer le statut général de cette route.</target>
+            </trans-unit>
+            <trans-unit id="form.section.sitemap">
+                <source>form.section.sitemap</source>
+                <target>Plan du site &amp; SEO</target>
+            </trans-unit>
+            <trans-unit id="form.section.sitemap_description">
+                <source>form.section.sitemap_description</source>
+                <target>Gérer le référencement de cette route.</target>
+            </trans-unit>
+            <trans-unit id="form.help.is_active">
+                <source>form.help.is_active</source>
+                <target>Si désactivé, cette route sera inaccessible aux utilisateurs.</target>
+            </trans-unit>
+            <trans-unit id="form.help.sitemap_priority">
+                <source>form.help.sitemap_priority</source>
+                <target>Priorité relative (0,0 à 1,0) dans le sitemap.xml.</target>
+            </trans-unit>
+            <trans-unit id="form.label.exclude_from_sitemap">
+                <source>form.label.exclude_from_sitemap</source>
+                <target>Exclure du plan du site</target>
+            </trans-unit>
+            <trans-unit id="form.help.exclude_from_sitemap">
+                <source>form.help.exclude_from_sitemap</source>
+                <target>Cocher pour masquer cette route du sitemap.xml.</target>
+            </trans-unit>
+            <trans-unit id="validator.route_syntax_invalid">
+                <source>validator.route_syntax_invalid</source>
+                <target>Le motif de route « {{ pattern }} » est invalide : {{ error }}</target>
+            </trans-unit>
+            <trans-unit id="route.unique_name">
+                <source>route.unique_name</source>
+                <target>Ce nom de route est déjà utilisé.</target>
+            </trans-unit>
+            <trans-unit id="route.unique_path">
+                <source>route.unique_path</source>
+                <target>Ce chemin de route est déjà utilisé.</target>
+            </trans-unit>
+            <trans-unit id="search.category">
+                <source>search.category</source>
+                <target>Routes</target>
+            </trans-unit>
+            <trans-unit id="search.badge.active">
+                <source>search.badge.active</source>
+                <target>Actif</target>
+            </trans-unit>
+            <trans-unit id="search.badge.inactive">
+                <source>search.badge.inactive</source>
+                <target>Inactif</target>
+            </trans-unit>
+            <trans-unit id="search.page_label">
+                <source>search.page_label</source>
+                <target>Page : %title%</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
