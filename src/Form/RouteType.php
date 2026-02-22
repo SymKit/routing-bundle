@@ -12,12 +12,11 @@ use Symkit\FormBundle\Form\Type\ActiveInactiveType;
 use Symkit\FormBundle\Form\Type\FormSectionType;
 use Symkit\FormBundle\Form\Type\SitemapPriorityType;
 use Symkit\RoutingBundle\Contract\RouteEntityInterface;
-use Symkit\RoutingBundle\Entity\Route;
 
 final class RouteType extends AbstractType
 {
     public function __construct(
-        private readonly string $entityClass = Route::class,
+        private readonly string $entityClass,
     ) {
     }
 

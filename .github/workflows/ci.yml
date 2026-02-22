@@ -43,6 +43,24 @@ jobs:
       - run: composer install --no-progress
       - run: make deptrac
 
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make lint
+
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: intl, mbstring, xml, dom
+          coverage: xdebug
+      - run: composer install --no-progress
+      - run: make quality
+
   tests:
     runs-on: ubuntu-latest
     strategy:
@@ -59,9 +77,9 @@ jobs:
         with:
           php-version: '${{ matrix.php }}'
           extensions: intl, mbstring, xml, dom
-      - run: |
-          composer require --no-update symfony/framework-bundle:${{ matrix.symfony }}
-          composer update symfony/* --no-progress --prefer-dist
+      - run: composer update --no-progress --prefer-dist
+      - run: composer require --no-update symfony/framework-bundle:${{ matrix.symfony }}
+      - run: composer update symfony/* --no-progress --prefer-dist
       - run: make test
 
   infection:

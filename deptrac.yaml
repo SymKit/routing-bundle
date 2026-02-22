@@ -72,10 +72,8 @@ deptrac:
             - Contract
         Form:
             - Contract
-            - Entity
         Validator:
             - Contract
-            - Entity
             - Factory
         Resource:
             - Repository

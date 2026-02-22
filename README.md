@@ -10,10 +10,10 @@ Dynamic database-driven routing for Symfony. Manage routes in the database with 
 
 - PHP 8.2+
 - Symfony 7.0+ or 8.0+
-- Doctrine ORM
+- `doctrine/doctrine-bundle` (Doctrine ORM)
 - `symkit/crud-bundle` (for admin)
-- `symkit/sitemap-bundle` (optional, sitemap)
-- `symkit/search-bundle` (optional, global search)
+- `symkit/sitemap-bundle` (sitemap; disable via `symkit_routing.sitemap.enabled` if not needed)
+- `symkit/search-bundle` (global search; disable via `symkit_routing.search.enabled` if not needed)
 
 ## Installation
 

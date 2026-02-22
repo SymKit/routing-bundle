@@ -6,7 +6,7 @@ namespace Symkit\RoutingBundle\Resource;
 
 use Symfony\Component\Config\Resource\ResourceInterface;
 
-class RoutingDatabaseResource implements ResourceInterface
+final readonly class RoutingDatabaseResource implements ResourceInterface
 {
     public function __construct(
         private readonly int $count,
