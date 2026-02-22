@@ -102,7 +102,6 @@ The bundle registers a `RoutingDatabaseResource` and a resource checker. The rou
 
 - Run the quality pipeline: `make quality` (cs-check, phpstan, deptrac, tests, infection).
 - Full CI: `make ci` (adds security-check).
-- To strip `Co-authored-by` from commit messages: `make install-hooks`.
 
 ## License
 
